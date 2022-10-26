@@ -1,0 +1,37 @@
+import random
+player = False
+comp_score = 0
+player_score = 0
+while True:
+    choices = ["rock","paper","scissors"]
+    computer = random.choice(choices)
+   
+    player = input("rock, paper or scissors? :")
+    if player == computer:
+        print("tie!")
+    elif player == "rock":
+        if computer == "scissors":
+            print("you won", player, "smashed", computer)
+            player_score += 1
+        else:
+            print("you lose", computer, "crushed", player)
+            comp_score += 1
+    elif player == "paper":
+        if computer == "rock":
+            print("you won", player, "crushed", computer)
+            player_score += 1
+        else:
+            print("you lose", computer, "cut", player)
+            comp_score += 1
+    elif player == "scissors":
+        if computer == "rock":
+            print("you lose", computer, "broke", player)
+            comp_score += 1
+        else:
+            print("you win", player, "cut", computer)
+            player_score += 1
+    elif player == "end":
+        print("final scores:")
+        print("computer:", comp_score)
+        print("player:", player_score)
+        break
