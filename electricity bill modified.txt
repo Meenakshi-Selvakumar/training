@@ -1,3 +1,5 @@
+units = int(input("enter the number of units:"))
+
 if units<= 100:
     print("amount payable = 0")
 elif units<= 200:
