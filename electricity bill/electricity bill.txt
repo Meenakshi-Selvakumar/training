@@ -1,0 +1,17 @@
+if units<= 100:
+    print("amount payable = 0")
+elif units<= 200:
+    fc = 20
+    ec = (units - 100)*1.5
+    total = fc+ec
+    print("amount payable = ", total)
+elif units<= 500:
+    fc = 30
+    ec = (units - 200)*3+(100*2)
+    total = fc+ec
+    print("amount payable = ", total)
+else:
+    fc = 30
+    ec = (units- 500)*6.6+(300*4.6)+(100*3.5)
+    total = fc+ec
+    print("amount payable = ", total)
