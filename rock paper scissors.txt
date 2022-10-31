@@ -1,7 +1,7 @@
 import random
 player = False
-comp_score = 1
-player_score = 1
+comp_score = 2
+player_score = 2
 while True:
     choices = ["rock","paper","scissors"]
     computer = random.choice(choices)
