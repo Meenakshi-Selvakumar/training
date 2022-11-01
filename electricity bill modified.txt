@@ -1,4 +1,4 @@
-units = int(input("enter the number of units:"))
+units = int(input("enter the number of units used:"))
 
 if units<= 100:
     print("amount payable = 0")
